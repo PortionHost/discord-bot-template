@@ -1,4 +1,6 @@
 import os
+from pydactyl import PterdoactylClient
+
 
 # The prefix that will be used to parse commands.
 # It doesn't have to be a single character!
@@ -12,3 +14,5 @@ NOW_PLAYING = COMMAND_PREFIX + "commands"
 
 # Base directory. Feel free to use it if you want.
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+
+client = PterodactylClient('https://panel.mydomain.com', 'MySuperSecretApiKey')
